@@ -17,7 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ProductHuntDetail">
+            android:name="com.emoji.apisoup.ProductHuntDetail"
+
+            android:label="@string/title_ProductDetail"
+        </activity>
+
 
     </application>
+
+
 
 </manifest>

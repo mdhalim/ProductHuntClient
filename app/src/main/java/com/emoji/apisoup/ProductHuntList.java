@@ -1,6 +1,8 @@
 package com.emoji.apisoup;
 
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -21,15 +23,16 @@ public class ProductHuntList implements Serializable {
     private String screenshot_url;
     private String largePosterUrl;
     private String discussion_Url;
-    private int created_at;
+    private String created_at;
     private int votes_count;
 
 
     public String getNames() {
+
         return name;
     }
 
-    public int getCreated_at() {
+    public String getCreated_at() {
         return created_at;
     }
 
@@ -58,7 +61,7 @@ public class ProductHuntList implements Serializable {
         try {
             // Deserialize json into object fields
             b.name = jsonObject.getString("name");
-            b.created_at = jsonObject.getInt("created_at");
+            b.created_at = jsonObject.getString("created_at");
             b.tagline = jsonObject.getString("tagline");
             b.screenshot_url = jsonObject.getJSONObject("screenshot_url").getString("300px");
             b.largePosterUrl = jsonObject.getJSONObject("screenshot_url").getString("850px");
@@ -92,6 +95,7 @@ public class ProductHuntList implements Serializable {
             {
                 posts.add(post);
             }
+
         }
 
         return posts;
