@@ -1,5 +1,9 @@
 package com.emoji.apisoup;
 
+/**
+ * Created by mdhalim on 16/05/16.
+ */
+
 import java.util.ArrayList;
 
 import org.json.JSONArray;

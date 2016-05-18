@@ -1,5 +1,9 @@
 package com.emoji.apisoup;
 
+/**
+ * Created by mdhalim on 18/05/16.
+ */
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
